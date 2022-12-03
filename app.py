@@ -90,7 +90,9 @@ if choose == "Z skoru":
 
  if choose == "Gelişim Basamakları":
 
+    st.write("Hazırlanıyor",size=32)
     img = Image.open("./images/developmental_steps.jpg")
+    st.image(img)
 
 
 
