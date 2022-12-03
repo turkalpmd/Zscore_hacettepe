@@ -23,12 +23,13 @@ st.subheader("Büyüme Takibi")
 
 st.text("""
 Bu uygulamada Z score'lar 2 yaş ve altında WHO üstünde ise \n
-CDC referans aralıkları kullanılarak hesaplanır.
+CDC referans aralıkları kullanılarak hesaplanır.\n
+Hizmet kalitesinde artış amaçlı olarak girdiğiniz veriler kayıt altına alınacaktır.
 	""")
 
 
-weight = st.number_input("KG cinsinden ağırlık;", step = 0.1)
-height = st.number_input("Santimetre cinsinden boyu;")
+weight = st.number_input("KG cinsinden ağırlık;", step = 1)
+height = st.number_input("Santimetre cinsinden boyu;", step = 1)
 age = st.number_input("Ay olarak yaşı;",step=1)
 gender =st.radio("Cinsiyeti seçiniz", options=["Erkek","Kız"])
     #text_input("Erkek için E Kız için K yazınız;")
@@ -37,9 +38,6 @@ if gender == "Erkek":
     gender = "M"
 if gender == "Kız":
     gender = "F"
-
-
-
 
 if st.button("Z skorunu Analiz Et"):
 
@@ -61,4 +59,4 @@ if st.button("Z skorunu Analiz Et"):
                     'lhfa':lhfa
                 }
     users.insert(response)
-    st.write('Data saved to the database')
+    st.text("Bilgiler Database'e aktarıldı")
