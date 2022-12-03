@@ -107,8 +107,8 @@ if choose == "About":
 
         # st.write("Sharone Li is a data science practitioner, enthusiast, and blogger. She writes data science articles and tutorials about Python, data visualization, Streamlit, etc. She is also an amateur violinist who loves classical music.\n\nTo read Sharone's data science posts, please visit her Medium blog at: https://medium.com/@insightsbees")    
         # st.image(profile, width=700 )       
-
+        st.write("success")
 
 
 #https://medium.com/codex/create-a-multi-page-app-with-the-new-streamlit-option-menu-component-3e3edaf7e7ad
-# pipreqs --savepath=requirements.txt && pip-compile
+# pipreqs --savepath=requirements.txt && pip-compile 
