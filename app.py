@@ -23,8 +23,8 @@ with st.sidebar:
                                 }
                         )
 
-logo = Image.open(r'https://github.com/turkalpmd/turkalpmd.github.io/blob/master/assets/img/apple-touch.png')
-profile = Image.open(r'https://github.com/turkalpmd/turkalpmd.github.io/blob/master/assets/img/turkalpmd.jpg')
+logo = Image.open('https://github.com/turkalpmd/turkalpmd.github.io/blob/master/assets/img/apple-touch.png')
+profile = Image.open('https://github.com/turkalpmd/turkalpmd.github.io/blob/master/assets/img/turkalpmd.jpg')
 
 
 
