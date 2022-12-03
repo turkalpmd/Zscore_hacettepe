@@ -11,6 +11,15 @@ DETA_KEY = "a06jeh1v_GJmS8DEiFToMLujbKenNi4rKPKj4fMNr"
 deta = Deta(DETA_KEY)
 users = deta.Base("bmi")
 
+
+with st.sidebar:
+    with st.echo():
+        st.write("This code will be printed to the sidebar.")
+
+    with st.spinner("Loading..."):
+        time.sleep(5)
+    st.success("Done!")
+    
 st.title("Z-score Hesaplama Uygulaması")
 
 img = Image.open("hacettepe.jpg")
