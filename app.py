@@ -7,6 +7,9 @@ import numpy as np
 from deta import Deta
 from streamlit_option_menu import option_menu
 import streamlit.components.v1 as html
+from dotenv import load_dotenv
+import os
+
 
 
 with st.sidebar:
@@ -31,8 +34,9 @@ with st.sidebar:
 if choose == "Z skoru":
     # col1, col2, col3 = st.columns( [0.1, 0.8, 0.1])
     # with col2:               # To display the header text using css style   with col2:    
-    DETA_KEY = "a06jeh1v_GJmS8DEiFToMLujbKenNi4rKPKj4fMNr"
-
+    load_dotenv(".env")
+    DETA_KEY = os.getenv("DETA_KEY")
+    
     deta = Deta(DETA_KEY)
     users = deta.Base("bmi")
 
