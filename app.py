@@ -88,7 +88,7 @@ if choose == "Z skoru":
         users.insert(response)
         st.text("Bilgiler Database'e aktarıldı")
 
- if choose == "Gelişim Basamakları":
+if choose == "Gelişim Basamakları":
 
     st.write("Hazırlanıyor",size=32)
     img = Image.open("./images/developmental_steps.jpg")
