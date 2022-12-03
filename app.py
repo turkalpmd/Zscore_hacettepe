@@ -99,7 +99,12 @@ if choose == "Uygulama geliştirici":
     
     profile = Image.open(r'./images/turkalpmd.jpg')
     
-    st.write("Çalışmalarım; [link](https://turkalpmd.github.io)")
+    st.markdown(""" <style> .font {
+    font-size:35px ; font-family: 'Cooper Black'; color: #FFFF;} 
+    </style> """, unsafe_allow_html=True)
+    st.markdown('<a href= "https://turkalpmd.github.io" > <p class="font">About the Creator</p></a>', unsafe_allow_html=True)
+
+    #st.write("[Çalışmalarım;](https://turkalpmd.github.io)")
 
     st.image(profile, width=700 )
 
