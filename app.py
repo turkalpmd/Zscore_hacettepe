@@ -10,8 +10,8 @@ import streamlit.components.v1 as html
 
 
 with st.sidebar:
-    choose = option_menu("App Gallery", ["About", "Photo Editing", "Project Planning", "Python e-Course", "Contact"],
-                         icons=['bi bi-calculator-fill', 'bi bi-clipboard-heart-fill', 'kanban', 'book','person lines fill'],
+    choose = option_menu("App Gallery", ["Z skoru", "Gelişim Basamakları", "Project Planning", "Python e-Course", "Contact"],
+                         icons=['bi bi-calculator-fill', 'bi bi-arrows-fullscreen', 'kanban', 'book','person lines fill'],
                          # icons = https://icons.getbootstrap.com/
                          menu_icon="app-indicator", 
                          default_index=0,
@@ -23,12 +23,12 @@ with st.sidebar:
                                 }
                         )
 
-logo = Image.open('https://github.com/turkalpmd/turkalpmd.github.io/blob/master/assets/img/apple-touch.png')
-profile = Image.open('https://github.com/turkalpmd/turkalpmd.github.io/blob/master/assets/img/turkalpmd.jpg')
+# logo = Image.open('https://github.com/turkalpmd/turkalpmd.github.io/blob/master/assets/img/apple-touch.png')
+# profile = Image.open('https://github.com/turkalpmd/turkalpmd.github.io/blob/master/assets/img/turkalpmd.jpg')
 
 
 
-if choose == "About":
+if choose == "Z skoru":
     col1, col2 = st.columns( [0.8, 0.2])
     with col1:               # To display the header text using css style
 
