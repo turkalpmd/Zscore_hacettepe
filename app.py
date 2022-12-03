@@ -103,10 +103,10 @@ if choose == "About":
         # </style> """, unsafe_allow_html=True)
         # st.markdown('<p class="font">About the Creator</p>', unsafe_allow_html=True)    
     with col2:               # To display brand log
-        st.image(logo, width=130 )     
+        # st.image(logo, width=130 )     
 
-        st.write("Sharone Li is a data science practitioner, enthusiast, and blogger. She writes data science articles and tutorials about Python, data visualization, Streamlit, etc. She is also an amateur violinist who loves classical music.\n\nTo read Sharone's data science posts, please visit her Medium blog at: https://medium.com/@insightsbees")    
-        st.image(profile, width=700 )       
+        # st.write("Sharone Li is a data science practitioner, enthusiast, and blogger. She writes data science articles and tutorials about Python, data visualization, Streamlit, etc. She is also an amateur violinist who loves classical music.\n\nTo read Sharone's data science posts, please visit her Medium blog at: https://medium.com/@insightsbees")    
+        # st.image(profile, width=700 )       
 
 
 
