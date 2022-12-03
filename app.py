@@ -11,7 +11,7 @@ import streamlit.components.v1 as html
 
 with st.sidebar:
     choose = option_menu("Hacettepe Büyüme & Gelişim", ["Z skoru", "Gelişim Basamakları", "Uygulama geliştirici"],
-                         icons=['bi bi-calculator-fill', 'bi bi-arrows-fullscreen','person-gear'],
+                         icons=['bi bi-calculator-fill', 'bi bi-arrows-fullscreen','person-badge'],
                          # icons = https://icons.getbootstrap.com/
                          menu_icon="app-indicator", 
                          default_index=0,
