@@ -41,7 +41,7 @@ if choose == "Z skoru":
     # DETA_KEY = "a06jeh1v_GJmS8DEiFToMLujbKenNi4rKPKj4fMNr"
     
     deta = Deta(DETA_KEY)
-    users = deta.Base("bmi")
+    users = deta.Base("Z_skor")
 
 
 
