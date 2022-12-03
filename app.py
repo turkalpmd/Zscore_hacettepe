@@ -38,13 +38,7 @@ if gender == "Erkek":
 if gender == "Kız":
     gender = "F"
 
-df = pd.DataFrame()
-df["weight"] = weight
-df["height"] = height
-df["age"] = age
-df["gender"] = gender
 
-uploaded_files = df
 
 
 if st.button("Z skorunu Analiz Et"):
@@ -52,8 +46,8 @@ if st.button("Z skorunu Analiz Et"):
 
 
     wfa, lhfa = calc(weight,height,age,gender)#result = process_csv(dataframe)
-    df["wfa"] = wfa
-    df["lhfa"] = lhfa
+    wfa = float(str(wfa))
+    lhfa = float(str(lhfa))
     
     st.success(f"Yaşa göre ağırlık; {wfa}") 
     st.success(f"Yaşa göre boy; {lhfa}") #st.success(f"Sonuç: {result}")
