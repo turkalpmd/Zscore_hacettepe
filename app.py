@@ -40,7 +40,7 @@ if choose == "Z skoru":
 
     st.title("Z-score Hesaplama Uygulaması")
 
-    img = Image.open("hacettepe.jpg")
+    img = Image.open("./images/hacettepe.jpg")
     st.image(img)
 
     # Introduction
@@ -88,7 +88,11 @@ if choose == "Z skoru":
         users.insert(response)
         st.text("Bilgiler Database'e aktarıldı")
 
- 
+ if choose == "Gelişim Basamakları":
+
+    img = Image.open("./images/developmental_steps.jpg")
+
+
 
 
 
