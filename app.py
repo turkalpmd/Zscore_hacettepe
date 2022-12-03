@@ -29,8 +29,8 @@ with st.sidebar:
 
 
 if choose == "Z skoru":
-    col1, col2, col3 = st.columns( [0.1, 0.8, 0.1])
-    with col2:               # To display the header text using css style   with col2:    
+    # col1, col2, col3 = st.columns( [0.1, 0.8, 0.1])
+    # with col2:               # To display the header text using css style   with col2:    
     DETA_KEY = "a06jeh1v_GJmS8DEiFToMLujbKenNi4rKPKj4fMNr"
 
     deta = Deta(DETA_KEY)
