@@ -69,7 +69,7 @@ if choose == "Z skoru":
     height = st.number_input("Santimetre cinsinden boyu;", step = 1)
     age = st.number_input("Ay olarak yaşı;",step=1)
     gender =st.radio("Cinsiyeti seçiniz", options=["Erkek","Kız"])
-    now = datetime.datetime.now()
+    now = datetime.datetime.now('%H.%M.%S %d-%m-%Y')
         #text_input("Erkek için E Kız için K yazınız;")
 
 
