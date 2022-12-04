@@ -64,12 +64,14 @@ if choose == "Z skoru":
         """)
 
     id_ = st.text_input("Dosya No")
+    id_ = int(id_)        
     weight = st.number_input("KG cinsinden ağırlık;", step = 1)
     height = st.number_input("Santimetre cinsinden boyu;", step = 1)
     age = st.number_input("Ay olarak yaşı;",step=1)
     gender =st.radio("Cinsiyeti seçiniz", options=["Erkek","Kız"])
     now = datetime.datetime.now()
         #text_input("Erkek için E Kız için K yazınız;")
+
 
     if gender == "Erkek":
         gender = "M"
@@ -89,7 +91,8 @@ if choose == "Z skoru":
 
 
             
-        response = {    'keys' : id_,
+        response = {   
+                        'keys' : id_,
                         'time' : now,
                         'age': age,
                         'weight' : weight,
@@ -97,7 +100,9 @@ if choose == "Z skoru":
                         'gender' : gender,
                         'wfa' : wfa,
                         'lhfa' : lhfa
+
                     }
+
         users.insert(response)
         st.text("Bilgiler Database'e aktarıldı")
 
