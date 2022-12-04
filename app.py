@@ -13,7 +13,8 @@ import pytz
 
 
 PAGE_TITLE = "Antropometri | Hacettepe Pediatri"
-
+PAGE_ICON = ":wave:"
+st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 with st.sidebar:
     choose = option_menu("Hacettepe Büyüme & Gelişim", ["Z skoru", "Gelişim Basamakları", "Uygulama geliştirici"],
                          icons=['bi bi-calculator-fill', 'bi bi-arrows-fullscreen','person-badge'],
