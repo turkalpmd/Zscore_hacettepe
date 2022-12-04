@@ -63,7 +63,7 @@ if choose == "Z skoru":
     Hizmet kalitesinde artış amaçlı olarak girdiğiniz veriler kayıt altına alınacaktır.
         """)
 
-    id_ = st.number_input("Dosya No")
+    id_ = st.text_input("Dosya No")
     weight = st.number_input("KG cinsinden ağırlık;", step = 1)
     height = st.number_input("Santimetre cinsinden boyu;", step = 1)
     age = st.number_input("Ay olarak yaşı;",step=1)
