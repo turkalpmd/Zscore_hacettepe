@@ -72,7 +72,7 @@ if choose == "Z skoru":
 
 
     
-    now = datetime.datetime.now('%H.%M.%S %d-%m-%Y')
+    now = datetime.now('%H.%M.%S %d-%m-%Y')
         #text_input("Erkek için E Kız için K yazınız;")
 
 
