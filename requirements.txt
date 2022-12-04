@@ -6,3 +6,4 @@ python-dotenv==0.21.0
 six==1.16.0
 streamlit==1.15.0
 streamlit_option_menu==0.3.2
+DateTime==4.7
