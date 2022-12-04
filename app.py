@@ -12,7 +12,7 @@ from datetime import datetime
 import pytz
 
 
-
+PAGE_TITLE = "Antropometri | Hacettepe Pediatri"
 
 with st.sidebar:
     choose = option_menu("Hacettepe Büyüme & Gelişim", ["Z skoru", "Gelişim Basamakları", "Uygulama geliştirici"],
