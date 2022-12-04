@@ -8,6 +8,8 @@ from deta import Deta
 from streamlit_option_menu import option_menu
 from dotenv import load_dotenv
 import os
+import datetime
+
 
 
 
@@ -61,11 +63,12 @@ if choose == "Z skoru":
     Hizmet kalitesinde artış amaçlı olarak girdiğiniz veriler kayıt altına alınacaktır.
         """)
 
-
+    id_ = st.number_input("Dosya No")
     weight = st.number_input("KG cinsinden ağırlık;", step = 1)
     height = st.number_input("Santimetre cinsinden boyu;", step = 1)
     age = st.number_input("Ay olarak yaşı;",step=1)
     gender =st.radio("Cinsiyeti seçiniz", options=["Erkek","Kız"])
+    now = datetime.datetime.now()
         #text_input("Erkek için E Kız için K yazınız;")
 
     if gender == "Erkek":
@@ -86,13 +89,14 @@ if choose == "Z skoru":
 
 
             
-        response = {
+        response = {    'keys' : id_,
+                        'time' : now,
                         'age': age,
-                        'weight': weight,
-                        'height': height,
-                        'gender': gender,
-                        'wfa':wfa,
-                        'lhfa':lhfa
+                        'weight' : weight,
+                        'height' : height,
+                        'gender' : gender,
+                        'wfa' : wfa,
+                        'lhfa' : lhfa
                     }
         users.insert(response)
         st.text("Bilgiler Database'e aktarıldı")
@@ -128,4 +132,4 @@ if choose == "Uygulama geliştirici":
 
 
 #https://medium.com/codex/create-a-multi-page-app-with-the-new-streamlit-option-menu-component-3e3edaf7e7ad
-# pipreqs --savepath=requirements.txt && pip-compile 
+# pipreqs --savepath=requirements.txt && pip-compile gi
