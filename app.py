@@ -84,10 +84,7 @@ if choose == "Z skoru":
         st.success(f"Yaşa göre ağırlık; {wfa}") 
         st.success(f"Yaşa göre boy; {lhfa}") #st.success(f"Sonuç: {result}")
 
-        if wfa <-2 or lhfa<-2:
 
-            st.markdown(""" <style> .font {font-size:35px ; font-family: 'Cooper Black'; color: #ff5b4f;} </style> """, unsafe_allow_html=True)
-            st.markdown('<p class="font" align="center">İleri gelişim değerlendirmesi önerilir !!! ;</p></a>', unsafe_allow_html=True)
             
         response = {
                         'age': age,
@@ -99,6 +96,11 @@ if choose == "Z skoru":
                     }
         users.insert(response)
         st.text("Bilgiler Database'e aktarıldı")
+
+        if wfa <-2 or lhfa<-2:
+
+            st.markdown(""" <style> .font {font-size:35px ; font-family: 'Cooper Black'; color: #ff5b4f;} </style> """, unsafe_allow_html=True)
+            st.markdown('<p class="font" align="center">İleri gelişim değerlendirmesi önerilir !!! ;</p></a>', unsafe_allow_html=True)
 
 if choose == "Gelişim Basamakları":
 
