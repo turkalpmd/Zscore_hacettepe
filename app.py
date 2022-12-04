@@ -92,7 +92,7 @@ if choose == "Z skoru":
 
             
         response = {   
-                        #'key' : id_,
+                        'key' : id_,
                         #'time' : now,
                         'age': age,
                         'weight' : weight,
