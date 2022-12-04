@@ -63,7 +63,7 @@ if choose == "Z skoru":
     Hizmet kalitesinde artış amaçlı olarak girdiğiniz veriler kayıt altına alınacaktır.
         """)
 
-    id_ = st.number_input("Dosya No",step=1)
+    name = st.number_input("Dosya No",step=1)
            
     weight = st.number_input("KG cinsinden ağırlık;", step = 1)
     height = st.number_input("Santimetre cinsinden boyu;", step = 1)
@@ -92,7 +92,7 @@ if choose == "Z skoru":
 
             
         response = {   
-                        #'key' : id_,
+                        'key' : name,
                         #'time' : now,
                         'age': age,
                         'weight' : weight,
