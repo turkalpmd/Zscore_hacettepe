@@ -8,7 +8,7 @@ from deta import Deta
 from streamlit_option_menu import option_menu
 from dotenv import load_dotenv
 import os
-import datetime
+from datetime import datetime
 
 
 
@@ -69,6 +69,9 @@ if choose == "Z skoru":
     height = st.number_input("Santimetre cinsinden boyu;", step = 1)
     age = st.number_input("Ay olarak yaşı;",step=1)
     gender =st.radio("Cinsiyeti seçiniz", options=["Erkek","Kız"])
+
+
+    
     now = datetime.datetime.now('%H.%M.%S %d-%m-%Y')
         #text_input("Erkek için E Kız için K yazınız;")
 
@@ -137,4 +140,4 @@ if choose == "Uygulama geliştirici":
 
 
 #https://medium.com/codex/create-a-multi-page-app-with-the-new-streamlit-option-menu-component-3e3edaf7e7ad
-# pipreqs --savepath=requirements.txt && pip-compile gi
+# pipreqs --savepath=requirements.txt && pip-compile 
