@@ -9,7 +9,7 @@ __pycache__/
 .DS_Store
 # C extensions
 *.so
-
+deney.ipynb
 # Distribution / packaging
 .Python
 build/

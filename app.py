@@ -9,7 +9,7 @@ from streamlit_option_menu import option_menu
 from dotenv import load_dotenv
 import os
 from datetime import datetime
-#import pytz
+import pytz
 
 
 
@@ -73,7 +73,8 @@ if choose == "Z skoru":
 
 
     
-    now = datetime.now('%H.%M.%S %d-%m-%Y',tz=timezone.now())
+    istanbul = pytz.timezone("Europe/Istanbul")
+    now = datetime.now(istanbul).strftime("%m/%d/%Y, %H:%M:%S")
         #text_input("Erkek için E Kız için K yazınız;")
 
 
