@@ -64,7 +64,7 @@ if choose == "Z skoru":
         """)
 
     id_ = st.text_input("Dosya No")
-    id_ = int(id_)        
+           
     weight = st.number_input("KG cinsinden ağırlık;", step = 1)
     height = st.number_input("Santimetre cinsinden boyu;", step = 1)
     age = st.number_input("Ay olarak yaşı;",step=1)
