@@ -97,7 +97,7 @@ if choose == "Z skoru":
                         'age': age,
                         'weight' : weight,
                         'height' : height,
-                        'gender' : gender,
+                        #'gender' : gender,
                         'wfa' : wfa,
                         'lhfa' : lhfa
 
