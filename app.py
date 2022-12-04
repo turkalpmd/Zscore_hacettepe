@@ -103,7 +103,7 @@ if choose == "Z skoru":
                         'gender' : gender,
                         'wfa' : wfa,
                         'lhfa' : lhfa,
-                        'key' : name,
+                        'id' : name,
                         'time' : now
 
                     }
